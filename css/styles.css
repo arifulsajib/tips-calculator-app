@@ -30,7 +30,12 @@ main h5 {
 
 input {
     color: hsl(183, 100%, 15%);
+    background-color: hsl(185, 41%, 84%);
     font-weight: bold;
+}
+
+input:focus {
+    outline: none;
 }
 
 .card {
@@ -48,4 +53,18 @@ input {
 
 .active {
     background-color: #26c0ab;
+}
+
+.input {
+    background-color: hsl(185, 41%, 84%);
+}
+
+button:active,
+button:focus,
+button:hover {
+    background-color: #26c0ab !important;
+}
+
+.disable:disabled {
+    background-color: hsl(185, 41%, 84%);
 }
