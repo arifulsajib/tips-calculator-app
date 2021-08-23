@@ -12,10 +12,89 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+    <header>
+        <h2 class="fs-3 fw-bold text-center mt-5">SPLI</h2>
+        <h2 class="fs-3 fw-bold text-center mb-5">TTER</h2>
+    </header>
+    <main>
+        <section class="main-section d-flex justify-content-center">
+            <div class="card mb-3" style="max-width: 840px;">
+                <div class="row g-4 p-4">
+                    <div class="col-md-6 p-4">
+                        <h5 class="fs-6">Bill</h5>
+                        <div class="d-flex flex-row justify-content-between mb-4">
+                            <span><img src="images/icon-dollar.svg" alt="dollar-sign"></span>
+                            <input class="container-fluid border-0 text-end fs-4" type="text" placeholder="0.00">
+                        </div>
+                        <h5 class="fs-6">Select tip %</h5>
+                        <div class="row gy-2 mb-4">
+                            <div class="col-6 col-md-4"><button
+                                    class="btn btn-primary container-fluid fs-4 fw-bold">5%</button>
+                            </div>
+                            <div class="col-6 col-md-4"><button
+                                    class="btn btn-primary container-fluid fs-4 fw-bold">10%</button>
+                            </div>
+                            <div class="col-6 col-md-4"><button
+                                    class="btn active container-fluid fs-4 fw-bold">15%</button>
+                            </div>
+                            <div class="col-6 col-md-4"><button
+                                    class="btn btn-primary container-fluid fs-4 fw-bold">25%</button>
+                            </div>
+                            <div class="col-6 col-md-4"><button
+                                    class="btn btn-primary container-fluid fs-4 fw-bold">50%</button>
+                            </div>
+                            <div class="col-6 col-md-4"><button
+                                    class="btn btn-primary container-fluid fs-5 fw-bold">Custom</button>
+                            </div>
+                        </div>
+                        <h5 class="fs-6">Number of people</h5>
+                        <div class="d-flex flex-row justify-content-between">
+                            <span><img src="images/icon-person.svg" alt="dollar-sign"></span>
+                            <input class="container-fluid border-0 text-end fs-4" type="text" placeholder="0">
+                        </div>
+                    </div>
+                    <div class="calc col-md-6 p-4">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <h5 class="fs-5 fw-bold text-white">Tip Amount</h5>
+                                    <p class="fs-6 text-secondary">/ person</p>
+                                </div>
+                                <div>
+                                    <h1 class="fs-1 fw-bold">$4</h1>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <h5 class="fs-5 fw-bold text-white">Total</h5>
+                                    <p class="fs-6 text-secondary">/ person</p>
+                                </div>
+                                <div>
+                                    <h1 class="fs-1 fw-bold">$120</h1>
+                                </div>
+                            </div>
+                            <div class="mt-5 pt-5">
+                                <button class="btn active container-fluid">RESET</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="text-center my-4 text-secondary fw-bold">Developed by <a class="text-decoration-none"
+                href="https://github.com/arifulsajib">Ariful
+                Islam</a>, 2021</p>
+    </footer>
 
+    <!-- js -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>

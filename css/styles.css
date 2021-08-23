@@ -1,0 +1,51 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+body {
+    font-family: 'Space Mono', monospace;
+    background-color: hsl(185, 41%, 84%);
+}
+
+header {
+    margin-top: 10vh;
+}
+
+header h2 {
+    letter-spacing: 8px;
+    color: hsl(183, 100%, 15%);
+}
+
+main {
+    margin-bottom: 5vh;
+}
+
+main h1 {
+    color: #26c0ab;
+}
+
+main h5 {
+    color: hsl(186, 14%, 43%);
+    font-weight: bold;
+}
+
+input {
+    color: hsl(183, 100%, 15%);
+    font-weight: bold;
+}
+
+.card {
+    border-radius: 15px;
+}
+
+.calc {
+    border-radius: 15px;
+    background-color: hsl(183, 100%, 15%);
+}
+
+.btn {
+    background-color: hsl(183, 100%, 15%);
+}
+
+.active {
+    background-color: #26c0ab;
+}
