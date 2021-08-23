@@ -56,8 +56,8 @@ const calculation = (percent) => {
 
         const tipPerPerson = tipAmount / personCount;
         const totalPerPerson = (bill + tipAmount) / personCount;
-        setValue("tip", tipPerPerson);
-        setValue("total", totalPerPerson);
+        setValue("tip", tipPerPerson.toFixed(2));
+        setValue("total", totalPerPerson.toFixed(2));
     }
 }
 
