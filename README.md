@@ -1,4 +1,4 @@
-# Tips calculator app using js (ES6)
+## Tips calculator app using JS (ES6)
 
 ### The challenge
 
