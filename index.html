@@ -29,34 +29,45 @@
                         <h5 class="fs-6">Bill</h5>
                         <div class="input d-flex flex-row justify-content-between mb-4">
                             <span><img class="ms-2 mt-1" src="images/icon-dollar.svg" alt="dollar-sign"></span>
-                            <input class="container-fluid border-0 text-end fs-4" type="text" placeholder="0.00">
+                            <input id="bill-value" class="container-fluid border-0 text-end fs-4" type="text"
+                                placeholder="0.00">
                         </div>
+                        <small class="text-danger mb-4" id="bill-error" style="display: none;">Can't input zero or
+                            negative number</small>
+
                         <h5 class="fs-6">Select tip %</h5>
-                        <div class="row gy-2 mb-4">
+                        <div id="tip" class="row gy-2 mb-4">
                             <div class="col-6 col-md-4"><button
-                                    class="btn btn-primary container-fluid fs-4 fw-bold">5%</button>
+                                    class="tip-percent btn btn-primary container-fluid fs-4 fw-bold">5%</button>
                             </div>
                             <div class="col-6 col-md-4"><button
-                                    class="btn btn-primary container-fluid fs-4 fw-bold">10%</button>
+                                    class="tip-percent btn btn-primary container-fluid fs-4 fw-bold">10%</button>
                             </div>
                             <div class="col-6 col-md-4"><button
-                                    class="btn btn-primary container-fluid fs-4 fw-bold">15%</button>
+                                    class="tip-percent btn btn-primary container-fluid fs-4 fw-bold">15%</button>
                             </div>
                             <div class="col-6 col-md-4"><button
-                                    class="btn btn-primary container-fluid fs-4 fw-bold">25%</button>
+                                    class="tip-percent btn btn-primary container-fluid fs-4 fw-bold">25%</button>
                             </div>
                             <div class="col-6 col-md-4"><button
-                                    class="btn btn-primary container-fluid fs-4 fw-bold">50%</button>
+                                    class="tip-percent btn btn-primary container-fluid fs-4 fw-bold">50%</button>
                             </div>
-                            <div class="col-6 col-md-4"><button
-                                    class="btn disable btn-light container-fluid fs-5 fw-bold" disabled>Custom</button>
+                            <div class="col-6 col-md-4">
+                                <input id="custom-value"
+                                    class="tip-percent custom container-fluid border-0 text-center fw-bold" type="text"
+                                    placeholder="Custom">
                             </div>
+                            <small class="text-danger mb-3" id="custom-error" style="display: none;">Can't input zero
+                                or negative number</small>
                         </div>
                         <h5 class="fs-6">Number of people</h5>
                         <div class="input d-flex flex-row justify-content-between">
                             <span><img class="ms-2 mt-1" src="images/icon-person.svg" alt="dollar-sign"></span>
-                            <input class="container-fluid border-0 text-end fs-4" type="text" placeholder="0">
+                            <input id="person-value" class="container-fluid border-0 text-end fs-4" type="text"
+                                value="1">
                         </div>
+                        <small class="text-danger mt-4" id="person-error" style="display: none;">Can't input text or
+                            negative number</small>
                     </div>
                     <div class="calc col-md-6 p-4">
                         <div class="card-body">
@@ -66,7 +77,7 @@
                                     <p class="fs-6 text-secondary">/ person</p>
                                 </div>
                                 <div>
-                                    <h1 class="fs-1 fw-bold">$4</h1>
+                                    <h1 class="fs-1 fw-bold">$<span id="tip-value">0</span></h1>
                                 </div>
                             </div>
                             <div class="d-flex justify-content-between">
@@ -75,11 +86,11 @@
                                     <p class="fs-6 text-secondary">/ person</p>
                                 </div>
                                 <div>
-                                    <h1 class="fs-1 fw-bold">$120</h1>
+                                    <h1 class="fs-1 fw-bold">$<span id="total-value">100</span></h1>
                                 </div>
                             </div>
                             <div class="mt-5 pt-5">
-                                <button class="btn active container-fluid">RESET</button>
+                                <button id="reset-btn" class="btn active container-fluid">RESET</button>
                             </div>
                         </div>
                     </div>
