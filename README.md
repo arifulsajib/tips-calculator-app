@@ -1,6 +1,6 @@
 ## Tips calculator app using JS (ES6)
 
-### The challenge
+### Features
 
 Users should be able to:
 
