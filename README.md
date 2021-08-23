@@ -11,8 +11,8 @@ Users will able to:
 
 ### Links
 
-- Live Site: [Live Site](https://arifulsajib.github.io/tips-calculator-app/)
-- Code: [Add live site URL here](https://github.com/arifulsajib/tips-calculator-app)
+- Live Site: [Tips Calculator](https://arifulsajib.github.io/tips-calculator-app/)
+- Code: [Github](https://github.com/arifulsajib/tips-calculator-app)
 
 ### Built with
 - Semantic HTML5 markup
